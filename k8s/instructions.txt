@@ -4,3 +4,6 @@ gcloud container clusters list
 
 # Fetching K8s cluster credentials
 gcloud container clusters get-credentials cluster_name --zone cluster_zone
+
+
+https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/
