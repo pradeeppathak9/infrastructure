@@ -1,4 +1,4 @@
-### Steps to setup JupyterHub, JupyterLab on Ubuntu
+### Steps to setup JupyterHub, JupyterLab on Ubuntu and run as a service
 
 ###### Install pip for python3
 sudo apt-get install python3-pip
