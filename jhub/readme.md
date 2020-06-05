@@ -32,4 +32,26 @@ cd /etc/jupyterhub
 sudo jupyterhub --generate-config
 ```
 
+- Create JupyterHub Service and add it to systemmd
+```
+sudo cp jupyterhub.service /etc/systemd/system/.
+```
+- Enable JupyterHub Service
+```
+sudo systemctl enable jupyterhub.service 
+```
 
+- Start JupyterHub Service
+```
+sudo systemctl start jupyterhub
+```
+
+- Check Status of JupyterHub Service
+```
+sudo systemctl status jupyterhub
+```
+
+- Stop JupyterHub Service
+```
+sudo systemctl stop jupyterhub
+```
