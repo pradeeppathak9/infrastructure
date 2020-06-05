@@ -1,0 +1,19 @@
+[Unit]
+Description=Jupyter Hub Service
+
+[Service]
+#Type=forking
+PIDFile=/var/run/jupyterhub.pid
+
+# Jupyter Notebook: change PATHs as needed for your system
+ExecStart=/usr/local/bin/jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
+# ExecStop=/bin/kill -s TERM $MAINPID
+
+User=root
+# Group=root
+WorkingDirectory=/etc/jupyterhub
+# KillMode=none
+# Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
