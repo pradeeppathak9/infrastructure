@@ -1,0 +1,6 @@
+gcloud auth login
+
+gcloud container clusters list
+
+# Fetching K8s cluster credentials
+gcloud container clusters get-credentials cluster_name --zone cluster_zone
