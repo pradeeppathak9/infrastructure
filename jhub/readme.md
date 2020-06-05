@@ -1,21 +1,21 @@
-### - Steps to setup JupyterHub, JupyterLab on Ubuntu
+## - Steps to setup JupyterHub on Ubuntu
 
-##### Install pip for python3
+##### Install Pip for Python3
 sudo apt-get install python3-pip
 
-##### Install nodejs 
+##### Install NodeJs 
 sudo apt-get install -y nodejs
 
-##### Install Jupyterhub, notebook, Jupyterlab, ipywidgets
+##### Install JupyterHub, JupyterNotebook (Optional), JupyterLab (Optional), IpyWidgets (Optional)
 
 sudo python3 -m pip install jupyterhub notebook jupyterlab ipywidgets
 sudo npm install -g configurable-http-proxy
 
-##### Test If Jupyterhub is installed properly and working successfully
+##### Test If JupyterHub is installed properly and working successfully
 jupyterhub
 
 
-### - Setting JupyterHub as a service
+## - Setting JupyterHub as a service
 
 ##### Creare JupyterHub Working Dorectory and Generate JupyterHub Config File
 sudo mkdir /etc/jupyerhub
