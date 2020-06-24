@@ -55,3 +55,16 @@ sudo systemctl status jupyterhub
 ```
 sudo systemctl stop jupyterhub
 ```
+
+
+## Enabling Jupyter Notebook extensions on JupyterHub
+
+- Install Contrib Extension
+```
+sudo -E pip3 install jupyter_contrib_nbextensions
+```
+
+- Enable Extension
+```
+sudo -E /home/ubuntu/.local/bin/jupyter-contrib-nbextension install --sys-prefix
+```
