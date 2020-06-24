@@ -66,5 +66,5 @@ sudo -E pip3 install jupyter_contrib_nbextensions
 
 - Enable Extension
 ```
-sudo -E /home/ubuntu/.local/bin/jupyter-contrib-nbextension install --sys-prefix
+sudo -E jupyter-contrib-nbextension install --sys-prefix
 ```
