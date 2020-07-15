@@ -3,7 +3,7 @@
 - Install Pip for Python3
 ```
 sudo apt-get install python3-pip
-sudo python3 -m pip -U pip
+sudo python3 -m pip install -U pip
 ```
 
 - Install NodeJs 
