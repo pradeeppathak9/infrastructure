@@ -1,5 +1,5 @@
 [Unit]
-Description=Jupyter Hub Service
+Description=Jupyter Hub Server
 
 [Service]
 #Type=forking
@@ -8,6 +8,9 @@ PIDFile=/var/run/jupyterhub.pid
 # Jupyter Notebook: change PATHs as needed for your system
 ExecStart=/usr/local/bin/jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
 # ExecStop=/bin/kill -s TERM $MAINPID
+StandardOutput=file:/etc/jupyterhub/main.log
+StandardError=file:/etc/jupyterhub/error.log
+
 
 User=root
 # Group=root
