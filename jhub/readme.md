@@ -27,7 +27,7 @@ jupyterhub
 
 - Creare JupyterHub Working Dorectory and Generate JupyterHub Config File
 ```
-sudo mkdir /etc/jupyerhub
+sudo mkdir /etc/jupyterhub
 cd /etc/jupyterhub
 sudo jupyterhub --generate-config
 ```
