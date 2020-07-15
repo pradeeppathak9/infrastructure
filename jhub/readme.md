@@ -3,11 +3,13 @@
 - Install Pip for Python3
 ```
 sudo apt-get install python3-pip
+sudo python3 -m pip -U pip
 ```
 
 - Install NodeJs 
 ```
 sudo apt-get install -y nodejs npm
+
 ```
 
 - Install JupyterHub, JupyterNotebook (Optional), JupyterLab (Optional), IpyWidgets (Optional)
