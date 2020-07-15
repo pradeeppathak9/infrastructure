@@ -43,6 +43,12 @@ sudo cp jupyterhub.service /etc/systemd/system/.
 sudo systemctl enable jupyterhub.service 
 ```
 
+- Service Daemon Reload
+```
+sudo systemctl daemon-reload
+```
+
+
 - Start JupyterHub Service
 ```
 sudo systemctl start jupyterhub
