@@ -1,0 +1,17 @@
+[Unit]
+Description=JupyterLab
+
+[Service]
+Type=simple
+PIDFile=/run/jupyter.pid
+WorkingDirectory=/home/pat
+ExecStart=/home/pat/miniconda3/bin/jupyter lab --NotebookApp.notebook_dir=/home/pat/Work --no-browser --NotebookApp.token='' --NotebookApp.password='' --port=9999 --ip=*
+User=pat
+Group=pat
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+
